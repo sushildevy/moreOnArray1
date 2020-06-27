@@ -1,0 +1,87 @@
+File:    README
+Author:  Sushil Pandey
+Program:  prog6
+   This program was written in C++ and distributed to be built on a 
+   Linux system.  To build the program, type 'make' to create the 
+   executable called 'prog6'
+
+RUNNING THE PROGRAM
+   Type 'prog6' at the command prompt after building the program.
+
+PROGRAM DESCRIPTIONp
+   This program will read scores from a text file(testscores) containing max score, name and score obtained
+   store them in parallel array, sort them descendingly,displays the names, scores, grade percentage and letter grade in 
+   tabular form in textfile(testresults), maximum scores, highest scores,lowest score, range of the 
+   scores, number of student proceed, mediam and standard deviation in a textfile(testsummary)
+    
+
+PROGRAM INPUT
+    input is from text file named "testscores".
+  
+   
+PROGRAM OUTPUT
+   All output is produced in a text files . The output will be tabular form of names, scores(array 
+   of ints), respected  grade and letter grades where scores are arranged descendingly in testresults 
+   and followed by a summary of maximum scores, highest scores,lowest score, range of the 
+   scores, number of student proceed, mediam and standard deviation in testsummaryS.
+
+PROGRAM DESIGN
+   This program stores all the ints in an array.
+
+   The general algorithm
+      read the ints into an array
+      sort the array descendingly
+      output name, scores, percentage and grades
+      output the summary
+
+   Function input and output, preconditions and postconditions can
+   be found in the documentation for each file.
+
+FILE INDEX
+   file             function(s)          description
+   --------------   -----------------    ----------------------
+   constants.h                           constant declarations
+   
+   main.cpp           main               calls all other functions
+
+   average.cpp        avg                computes the average of scores in an array
+
+   median.cpp         median             calculates the median of scores in an array
+
+   stdeviation.cpp    stdeviation        calculates the standard deviation 
+   
+                               
+   outputScores.cpp   outputScores       outputs results to the screen in tabular form
+
+   outputSummary.cpp  outputSummary      outputs summary to the screen      
+   
+   read.cpp           read               read from the keyboard into the array
+
+   sort.cpp           sort               sorts the array descendingly
+
+   makefile                              builds executable
+
+   README                                this file
+
+
+PROGRAM TESTING
+   This program was tested with different sets of testscores.  
+
+   Checked for a normal set of data (0 - mmaximum score )
+   
+   Checked for the number of values exceeding the array size and 
+   exceeding maximum scores 
+   
+   Checked for input of 1 value and the sentinel
+
+   Checked for input of just the sentinel
+
+   There are no known bugs.  Any errors should be reported to:
+   pandeysu@mnstate.edu
+
+
+
+
+
+
+
